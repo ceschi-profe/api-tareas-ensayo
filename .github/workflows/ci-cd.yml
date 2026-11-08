@@ -32,6 +32,9 @@ jobs:
           python -m compileall -q app
           python -c "from app import create_app; create_app()"
 
+      - name: Lint
+        run: ruff check .
+
       - name: Pruebas
         run: bash scripts/pruebas.sh
 
