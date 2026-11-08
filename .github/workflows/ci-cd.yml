@@ -33,7 +33,7 @@ jobs:
           python -c "from app import create_app; create_app()"
 
       - name: Lint
-        run: ruff check . || true
+        run: ruff check .
 
       - name: Pruebas
         run: bash scripts/pruebas.sh
