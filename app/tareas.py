@@ -37,3 +37,10 @@ class AlmacenTareas:
         self._tareas.append(tarea)
         self._siguiente_id += 1
         return tarea
+
+# dentro de class AlmacenTareas:
+    def marcar_hecha(self, tarea_id):
+        tarea = self.obtener(tarea_id)
+        if tarea is not None:
+            tarea["hecha"] = True
+        return tarea
