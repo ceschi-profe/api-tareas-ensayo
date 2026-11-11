@@ -20,5 +20,5 @@ jobs:
       - name: Instalar dependencias
         run: python -m pip install -r requirements-dev.txt
 
-      - name: Pruebas
+        - name: Pruebas
         run: bash scripts/pruebas.sh
