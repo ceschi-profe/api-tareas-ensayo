@@ -36,7 +36,7 @@ jobs:
         run: ruff check .
 
       - name: Pruebas
-          run: bash scripts/pruebas.sh
+        run: bash scripts/pruebas.sh
 
       - name: Publicar reporte de pruebas
         if: always()
